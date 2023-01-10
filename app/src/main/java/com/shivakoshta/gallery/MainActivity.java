@@ -115,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
         File[] list = MainDirectory.listFiles();
         if(list==null)
             return Images;
+
         for (File file : list) {
             if (file.isDirectory()) {
                 Images.addAll(fetchImage(file));

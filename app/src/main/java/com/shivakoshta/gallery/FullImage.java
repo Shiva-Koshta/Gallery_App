@@ -26,7 +26,9 @@ public class FullImage extends AppCompatActivity {
 
         list = (ArrayList) bundle.getParcelableArrayList("list");
         int position = intent.getIntExtra("position",0);
+
         String name = intent.getStringExtra("name");
+
         imageView.setImageURI(Uri.parse(list.get(position).toString()));
 
 
